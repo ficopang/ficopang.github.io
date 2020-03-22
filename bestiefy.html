@@ -12,7 +12,6 @@
   var score = document.getElementById("score").value;
   // Returns successful data submission message when the entered information is stored in database.
   var dataString = 'link=' + link + '&nama=' + nama + '&score=' + score;
-  alert(dataString);
   window.location.href = "https://zirconic-payments.000webhostapp.com/app/bestiefy.php?"+dataString;
 }
  </script>
@@ -21,7 +20,7 @@
   <div>
     <h2>Bestiefy Custom</h2>
      <form id="contoh-form">
-       <p>Link</p>
+       <p>Link (bestiefy.com)</p>
           <input type="text" id="link" required>
        <p>Nama</p>
           <input type="text" id="nama">
