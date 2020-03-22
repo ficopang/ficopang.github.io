@@ -1,8 +1,39 @@
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <meta charset="utf-8">
+  <title>Contoh ajax</title>
+</head>
 <script>
-$().ready(function() {
-   $("#text").html("Text added by jQuery code.");
-});
-</script>
+  function myFunction() {
+  var link = document.getElementById("link").value;
+  var nama = document.getElementById("nama").value;
+  var score = document.getElementById("score").value;
+  // Returns successful data submission message when the entered information is stored in database.
+  var dataString = 'link=' + link + '&nama=' + nama + '&score=' + score;
+  alert(dataString);
+  window.location.href = "https://zirconic-payments.000webhostapp.com/app/bestiefy.php?"+dataString;
+}
+ </script>
+<body>
 
-<div id="text"></div>
+  <div>
+    <h2>Bestiefy Custom</h2>
+     <form id="contoh-form">
+       <p>Link</p>
+          <input type="text" id="link" required>
+       <p>Nama</p>
+          <input type="text" id="nama">
+       <p>Skor</p>
+          <input type="number" id="score">
+       <p>
+         <input type="button" value="submit" onclick="myFunction()" id="submit">
+      </p>
+    </form>
+    <br>
+    <span class="loading"></span>
+  </div>
+
+</body>
+</html>
