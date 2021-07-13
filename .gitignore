@@ -1,8 +1,4 @@
 certificates/
 node_modules/
-package.json
-package-lock.json
-tailwind.config.js
-tailwind-base.css
-postcss.config.js
 .git
+template.html
