@@ -450,6 +450,24 @@
       </li>
     </template>
 
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-analytics.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyAlUDOsBkrEfeKbMo0UsGjSr9mNddodpwE",
+        authDomain: "ficopang-profile.firebaseapp.com",
+        projectId: "ficopang-profile",
+        storageBucket: "ficopang-profile.appspot.com",
+        messagingSenderId: "18929434110",
+        appId: "1:18929434110:web:2ee94d6cedee293efa94af",
+        measurementId: "G-RT633FCTL6"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
     <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-storage.js"></script>
