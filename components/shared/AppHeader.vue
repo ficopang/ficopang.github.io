@@ -64,6 +64,8 @@ export default {
               src="~/static/logo-light.svg"
               class="w-36"
               alt="Light Logo"
+              width="1290"
+              height="345"
             />
 
             <img
@@ -71,6 +73,8 @@ export default {
               src="~/static/logo-dark.svg"
               alt="Color Logo"
               class="w-36"
+              width="1290"
+              height="345"
             />
           </NuxtLink>
         </div>

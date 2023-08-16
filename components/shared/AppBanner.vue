@@ -106,8 +106,16 @@ export default {
         v-if="this.$colorMode.value == 'dark'"
         src="~/static/developer-dark.svg"
         alt="Developer Dark"
+        width="826"
+        height="551"
       />
-      <img v-else src="~/static/developer.svg" alt="Developer Light" />
+      <img
+        v-else
+        src="~/static/developer.svg"
+        alt="Developer Light"
+        width="826"
+        height="551"
+      />
     </div>
   </section>
 </template>

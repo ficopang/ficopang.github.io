@@ -178,7 +178,6 @@ export default {
               class="rounded-t-xl border-none"
               width="780"
               height="680"
-              sizes="sm:100vw md:50vw lg:400px"
               format="webp"
               loading="lazy"
             />
