@@ -1,14 +1,40 @@
 name: Build Nuxt
-on: [push]
+on: 
+  push:
+    branches:    
+        - nuxt2-v4
 jobs:
-  build_nuxt:
+  build-deploy:
     runs-on: ubuntu-latest
-    name: Build Nuxt
     steps:
-    - uses: actions/checkout@v2
-    - id: Build-Nuxt
-      uses: ashkantaravati/NuxtToGithubPages@v1.0
-      with:
-        username: 'ficopang'
-        reponame: 'ficopang.github.io'
-        token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
+      - uses: actions/checkout@v3
+      - name: Set Node.js 16.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+      - name: Install dependencies
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: install
+      - name: Install sass
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: add -D sass
+      - name: Build and generate nuxt
+        with:
+          username: 'ficopang'
+          reponame: 'ficopang.github.io'
+          token: ${{ secrets.GITHUB_TOKEN }} 
+        run: |
+              npm ci
+              npm run build
+              npm run generate
+              cd dist
+              if [ "none" !=  ${{ inputs.cname }} ]; then echo '${{ inputs.cname }}' > CNAME; fi
+              git config --global user.email "${{ inputs.gitemail }}"
+              git config --global user.name "${{ inputs.gitname }}"
+              git init
+              git add -A
+              git commit -m '${{ inputs.gitmsg }}'
+              git push -f https://${{ inputs.username }}:${{ inputs.token }}@github.com/${{ inputs.username }}/${{ inputs.reponame }}.git master:gh-pages
+        shell: bash
