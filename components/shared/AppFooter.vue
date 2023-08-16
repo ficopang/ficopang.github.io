@@ -66,6 +66,7 @@ export default {
               p-4
               duration-500
             "
+            :aria-label="social.name"
           >
             <i :data-feather="social.icon" class="w-6 sm:w-8 h-6 sm:h-8"></i>
           </a>

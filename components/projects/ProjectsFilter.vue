@@ -44,6 +44,7 @@ export default {
       :key="option"
       :value="option"
       class="sm:text-md"
+      aria-label="Project Filter"
     >
       {{ option }}
     </option>

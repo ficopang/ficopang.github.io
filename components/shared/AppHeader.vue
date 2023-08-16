@@ -90,6 +90,7 @@ export default {
             rounded-xl
             cursor-pointer
           "
+          aria-label="Toggle Dark/Light Mode"
         >
           <!-- Dark mode icon -->
           <svg
@@ -213,6 +214,7 @@ export default {
             rounded-lg
             cursor-pointer
           "
+          aria-label="Toggle Dark/Light Mode"
         >
           <!-- Dark mode icon -->
           <svg

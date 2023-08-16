@@ -66,6 +66,7 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     "@nuxtjs/tailwindcss",
     "@nuxtjs/color-mode",
+    "@nuxt/image",
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -90,7 +91,4 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
-
-  // Github Actions
-  // publicPath: "/ficopang.github.io/",
 };

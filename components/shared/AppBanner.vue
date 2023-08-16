@@ -87,7 +87,7 @@ export default {
             hover:text-white
             duration-500
           "
-          aria-label="Download Resume"
+          aria-label="Download CV"
         >
           <i
             data-feather="arrow-down-circle"

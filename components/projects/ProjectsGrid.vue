@@ -61,7 +61,7 @@ export default {
   <div class="pt-10 sm:pt-20 md:pt-24">
     <!-- Projects grid header -->
     <div class="text-center">
-      <p
+      <h2
         class="
           font-general-semibold
           text-2xl
@@ -73,7 +73,7 @@ export default {
         "
       >
         {{ projectsHeading }}
-      </p>
+      </h2>
       <!-- Note: This description is commented out, but if you want to see it, just uncomment this -->
       <!-- <p class="text-lg sm:text-xl text-gray-500 dark:text-ternary-light">
         {{ projectsDescription }}
@@ -141,8 +141,8 @@ export default {
               text-primary-dark
               dark:text-ternary-light
             "
-            id="name"
-            name="name"
+            id="query"
+            name="query"
             type="search"
             required=""
             placeholder="Search Projects"
@@ -172,10 +172,13 @@ export default {
       >
         <NuxtLink :to="`/projects/${project.id}`">
           <div>
-            <img
+            <nuxt-img
               :src="project.img"
               :alt="project.title"
               class="rounded-t-xl border-none"
+              sizes="sm:100vw md:50vw lg:400px"
+              format="webp"
+              loading="lazy"
             />
           </div>
           <div class="text-center px-4 py-6">
