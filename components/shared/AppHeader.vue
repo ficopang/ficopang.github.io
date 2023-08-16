@@ -64,6 +64,7 @@ export default {
               src="~/static/logo-light.svg"
               class="w-36"
               alt="Light Logo"
+              aria-label="Light Logo"
               width="1290"
               height="345"
             />
@@ -72,6 +73,7 @@ export default {
               v-show="this.$colorMode.preference == 'light'"
               src="~/static/logo-dark.svg"
               alt="Color Logo"
+              aria-label="Color Logo"
               class="w-36"
               width="1290"
               height="345"
