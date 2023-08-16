@@ -67,6 +67,7 @@ export default {
     "@nuxtjs/tailwindcss",
     "@nuxtjs/color-mode",
     "@nuxt/image",
+    "@nuxtclub/feathericons",
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
