@@ -3,6 +3,9 @@ import { mapState } from "vuex";
 import feather from "feather-icons";
 
 export default {
+  props: {
+    limit: String,
+  },
   data: () => {
     return {
       selectedProject: "",
@@ -12,15 +15,30 @@ export default {
   computed: {
     ...mapState(["projectsHeading", "projectsDescription", "projects"]),
     filteredProjects() {
-      if (this.selectedProject) {
+      if (this.selectedProject && this.searchProject) {
+        if (this.limit)
+          return this.filterProjectsByCategoryAndSearch().splice(0, 6);
+        return this.filterProjectsByCategoryAndSearch();
+      } else if (this.selectedProject) {
+        if (this.limit) return this.filterProjectsByCategory().splice(0, 6);
         return this.filterProjectsByCategory();
       } else if (this.searchProject) {
+        if (this.limit) return this.filterProjectsBySearch().splice(0, 6);
         return this.filterProjectsBySearch();
       }
+      if (this.limit) return [...this.projects].splice(0, 6);
       return this.projects;
     },
   },
   methods: {
+    filterProjectsByCategoryAndSearch() {
+      const categoryFilter = this.filterProjectsByCategory();
+      return categoryFilter.filter((item) => {
+        return item.title
+          .toLowerCase()
+          .includes(this.searchProject.toLowerCase());
+      });
+    },
     filterProjectsByCategory() {
       return this.projects.filter((item) => {
         let category =
@@ -79,7 +97,7 @@ export default {
       </h3>
       <div
         class="
-          flex
+          sm:flex
           justify-between
           border-b border-primary-light
           dark:border-secondary-dark

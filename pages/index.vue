@@ -11,7 +11,7 @@ export default {
   <div class="container mx-auto">
     <AppBanner />
 
-    <ProjectsGrid />
+    <ProjectsGrid limit="true" />
 
     <!-- View more projects button -->
     <div class="mt-5 sm:mt-14 flex justify-center">

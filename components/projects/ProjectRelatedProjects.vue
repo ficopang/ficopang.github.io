@@ -1,9 +1,11 @@
 <script>
+import { mapState } from "vuex";
+
 export default {
   data: () => {
     return {
       relatedProject: {
-        relatedProjectsHeading: "Related Projects",
+        relatedProjectsHeading: "Other Projects",
         relatedProjects: [
           {
             id: 1,
@@ -28,6 +30,20 @@ export default {
         ],
       },
     };
+  },
+  computed: {
+    ...mapState(["projects"]),
+    randomProjects() {
+      const projectsCopy = [...this.projects]; // Create a copy of the projects array
+      const randomProjects = [];
+
+      while (randomProjects.length < 4 && projectsCopy.length > 0) {
+        const randomIndex = Math.floor(Math.random() * projectsCopy.length);
+        randomProjects.push(projectsCopy.splice(randomIndex, 1)[0]);
+      }
+
+      return randomProjects;
+    },
   },
 };
 </script>
@@ -58,12 +74,14 @@ export default {
     </p>
 
     <div class="grid grid-cols-1 sm:grid-cols-4 gap-10">
-      <div v-for="item in relatedProject.relatedProjects" :key="item.id">
-        <img
-          :src="item.img"
-          class="rounded-xl cursor-pointer"
-          :alt="item.title"
-        />
+      <div v-for="project in randomProjects" :key="project.id">
+        <NuxtLink :to="`/projects/${project.id}`">
+          <img
+            :src="'../' + project.img"
+            class="rounded-xl cursor-pointer"
+            :alt="project.title"
+          />
+        </NuxtLink>
       </div>
     </div>
   </div>

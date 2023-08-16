@@ -23,8 +23,8 @@ export default {
         dark:text-ternary-light
       "
     >
-      &copy; {{ copyrightDate }}.
-      <a
+      &copy; {{ copyrightDate }}, Fico Pangestu.
+      <!-- <a
         href="https://github.com/realstoman/nuxtjs-tailwindcss-portfolio"
         target="__blank"
         class="
@@ -34,8 +34,8 @@ export default {
           duration-500
         "
         >{{ projectName }}</a
-      >
-      . Developed by
+      > -->
+      Originally made by
       <a
         href="https://stoman.me"
         target="__blank"
@@ -50,6 +50,7 @@ export default {
         "
         >{{ author }}</a
       >
+      and modified by Fico
     </div>
   </div>
 </template>

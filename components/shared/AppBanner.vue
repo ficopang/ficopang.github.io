@@ -43,7 +43,7 @@ export default {
           uppercase
         "
       >
-        Hi, Iam Stoman
+        Hi, I am Fico
       </h1>
       <p
         class="
@@ -62,7 +62,7 @@ export default {
       </p>
       <div class="flex justify-center sm:block">
         <a
-          href="/Stoman-Resume.pdf"
+          href="/CV-Fico-Pangestu.pdf"
           download=""
           class="
             flex

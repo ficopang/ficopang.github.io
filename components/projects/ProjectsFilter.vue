@@ -9,9 +9,9 @@ export default {
       type: Array,
       default: () => [
         "Web Application",
+        "Desktop Application",
         "Mobile Application",
         "UI/UX Design",
-        "Branding & Anim",
       ],
     },
   },

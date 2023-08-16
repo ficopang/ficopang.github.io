@@ -8,17 +8,12 @@ export default {
       contacts: [
         {
           id: 1,
-          name: "Your Address, Your City, Your Country",
-          icon: "map-pin",
-        },
-        {
-          id: 2,
-          name: "email@domain.com",
+          name: "pangestufico@gmail.com",
           icon: "mail",
         },
         {
-          id: 3,
-          name: "555 8888 888",
+          id: 2,
+          name: "(+62) 812 9659 5207",
           icon: "phone",
         },
       ],

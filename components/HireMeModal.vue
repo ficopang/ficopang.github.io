@@ -6,13 +6,26 @@ export default {
   components: { Button },
   data: () => {
     return {
-      // @todo
+      name: "",
+      email: "pangestufico@gmail.com",
+      subject: "I want to create a project",
+      message: "",
     };
   },
   mounted() {
     feather.replace();
   },
-  methods: {},
+  methods: {
+    sendEmail() {
+      const name = encodeURIComponent(this.name);
+      const email = encodeURIComponent(this.email);
+      const subject = encodeURIComponent(this.subject);
+      const message = encodeURIComponent(this.message);
+
+      const mailtoLink = `mailto:${email}?subject=${subject}&body=${message} (${name})`;
+      window.location.href = mailtoLink;
+    },
+  },
 };
 </script>
 
@@ -85,6 +98,7 @@ export default {
                 >
                   <div class="mt-0">
                     <input
+                      v-model="name"
                       class="
                         w-full
                         px-5
@@ -102,66 +116,13 @@ export default {
                       name="name"
                       type="text"
                       required=""
-                      placeholder="Name"
-                      aria-label="Name"
+                      placeholder="Your Name"
+                      aria-label="Your Name"
                     />
                   </div>
-                  <div class="mt-6">
-                    <input
-                      class="
-                        w-full
-                        px-5
-                        py-2
-                        border-1 border-gray-200
-                        dark:border-secondary-dark
-                        rounded-md
-                        text-md
-                        bg-secondary-light
-                        dark:bg-ternary-dark
-                        text-primary-dark
-                        dark:text-ternary-light
-                      "
-                      id="email"
-                      name="email"
-                      type="text"
-                      required=""
-                      placeholder="Email"
-                      aria-label="Email"
-                    />
-                  </div>
-                  <div class="mt-6">
-                    <select
-                      class="
-                        w-full
-                        px-5
-                        py-2
-                        border-1 border-gray-200
-                        dark:border-secondary-dark
-                        rounded-md
-                        text-md
-                        bg-secondary-light
-                        dark:bg-ternary-dark
-                        text-primary-dark
-                        dark:text-ternary-light
-                      "
-                      id="subject"
-                      name="subject"
-                      type="text"
-                      required=""
-                      aria-label="Project Category"
-                    >
-                      <option
-                        v-for="category in categories"
-                        :key="category.id"
-                        :value="category.value"
-                      >
-                        {{ category.name }}
-                      </option>
-                    </select>
-                  </div>
-
                   <div class="mt-6">
                     <textarea
+                      v-model="message"
                       class="
                         w-full
                         px-5
@@ -199,34 +160,12 @@ export default {
                         focus:ring-1 focus:ring-indigo-900
                         duration-500
                       "
-                      type="submit"
+                      type="button"
                       aria-label="Submit Request"
+                      @click="sendEmail"
                     />
                   </div>
                 </form>
-              </div>
-              <div
-                class="modal-footer mt-2 sm:mt-0 py-5 px-8 border0-t text-right"
-              >
-                <Button
-                  title="Close"
-                  class="
-                    px-4
-                    sm:px-6
-                    py-2
-                    bg-gray-600
-                    text-primary-light
-                    hover:bg-ternary-dark
-                    dark:bg-gray-200
-                    dark:text-secondary-dark
-                    dark:hover:bg-primary-light
-                    rounded-md
-                    focus:ring-1 focus:ring-indigo-900
-                    duration-500
-                  "
-                  @click="showModal()"
-                  aria-label="Close Hire Me Modal"
-                />
               </div>
             </div>
           </div>

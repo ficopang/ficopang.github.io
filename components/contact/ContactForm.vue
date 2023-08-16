@@ -4,8 +4,22 @@ export default {
   components: { Button },
   data: () => {
     return {
-      // @todo
+      name: "",
+      email: "pangestufico@gmail.com",
+      subject: "",
+      message: "",
     };
+  },
+  methods: {
+    sendEmail() {
+      const name = encodeURIComponent(this.name);
+      const email = encodeURIComponent(this.email);
+      const subject = encodeURIComponent(this.subject);
+      const message = encodeURIComponent(this.message);
+
+      const mailtoLink = `mailto:${email}?subject=${subject}&body=${message} (${name})`;
+      window.location.href = mailtoLink;
+    },
   },
 };
 </script>
@@ -52,6 +66,7 @@ export default {
             >Full Name</label
           >
           <input
+            v-model="fullName"
             class="
               w-full
               px-5
@@ -78,40 +93,11 @@ export default {
         <div class="mt-6">
           <label
             class="block text-lg text-primary-dark dark:text-primary-light mb-2"
-            for="email"
-            >Email</label
-          >
-          <input
-            class="
-              w-full
-              px-5
-              py-2
-              border border-gray-300
-              dark:border-primary-dark
-              border-opacity-50
-              text-primary-dark
-              dark:text-secondary-light
-              bg-ternary-light
-              dark:bg-ternary-dark
-              rounded-md
-              shadow-sm
-              text-md
-            "
-            id="email"
-            name="email"
-            type="text"
-            required=""
-            placeholder="Your Email"
-            aria-label="Email"
-          />
-        </div>
-        <div class="mt-6">
-          <label
-            class="block text-lg text-primary-dark dark:text-primary-light mb-2"
             for="subject"
             >Subject</label
           >
           <input
+            v-model="subject"
             class="
               w-full
               px-5
@@ -143,6 +129,7 @@ export default {
             >Message</label
           >
           <textarea
+            v-model="message"
             class="
               w-full
               px-5
@@ -180,8 +167,9 @@ export default {
               rounded-lg
               duration-500
             "
-            type="submit"
+            type="button"
             aria-label="Send Message"
+            @click="sendEmail"
           />
         </div>
       </form>

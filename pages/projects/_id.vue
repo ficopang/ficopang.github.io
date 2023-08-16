@@ -1,3 +1,5 @@
+<script src="https://unpkg.com/@diracleo/vue-enlargeable-image/dist/vue-enlargeable-image.min.js"></script>
+
 <script>
 import feather from "feather-icons";
 import ProjectRelatedProjects from "../../components/projects/ProjectRelatedProjects.vue";
@@ -11,6 +13,24 @@ export default {
   computed: {
     project() {
       return this.$store.getters.getProjectById(this.$route.params.id);
+    },
+  },
+  methods: {
+    async share() {
+      if (navigator.share) {
+        try {
+          await navigator.share({
+            title: this.project.title,
+            text: "Check this Fico Pangestu's portfolio project",
+            url: window.location,
+          });
+          console.log("Shared successfully");
+        } catch (error) {
+          console.error("Error sharing:", error);
+        }
+      } else {
+        console.warn("Web Share API not supported");
+      }
     },
   },
   mounted() {
@@ -29,21 +49,45 @@ export default {
     <div v-if="project">
       <!-- Project heading and meta info -->
       <div>
-        <p
-          class="
-            font-general-medium
-            text-left text-3xl
-            sm:text-4xl
-            font-bold
-            text-primary-dark
-            dark:text-primary-light
-            mt-14
-            sm:mt-20
-            mb-7
-          "
-        >
-          {{ project.title }}
-        </p>
+        <div class="flex justify-between items-center">
+          <div>
+            <p
+              class="
+                font-general-medium
+                text-left text-3xl
+                sm:text-4xl
+                font-bold
+                text-primary-dark
+                dark:text-primary-light
+                mt-14
+                sm:mt-20
+                mb-7
+              "
+            >
+              {{ project.title }}
+            </p>
+          </div>
+          <div class="mt-14 sm:mt-20 mb-7">
+            <button
+              class="
+                px-4
+                py-2.5
+                text-white
+                tracking-wider
+                bg-indigo-500
+                hover:bg-indigo-600
+                focus:ring-1 focus:ring-indigo-900
+                rounded-lg
+                duration-500
+              "
+              type="button"
+              aria-label="Share"
+              @click="share"
+            >
+              <i data-feather="share-2" class="w-4 lg:w-5 h-4 lg:h-5"></i>
+            </button>
+          </div>
+        </div>
         <div class="flex">
           <div class="flex items-center mr-10">
             <i
@@ -87,10 +131,16 @@ export default {
           v-for="projectImage in project.projectImages"
           :key="projectImage.id"
         >
-          <img
+          <enlargeable-image
             :src="projectImage.img"
-            class="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
-          />
+            :src_large="projectImage.img"
+          >
+            <img
+              :src="projectImage.img"
+              loading="lazy"
+              class="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
+            />
+          </enlargeable-image>
         </div>
       </div>
 
@@ -120,17 +170,7 @@ export default {
                   dark:text-ternary-light
                 "
               >
-                <span>{{ info.title }}: </span>
-                <a
-                  href="#"
-                  :class="
-                    info.title == 'Website' || info.title == 'Phone'
-                      ? 'hover:underline cursor-pointer'
-                      : ''
-                  "
-                  aria-label="Project website and phone"
-                  >{{ info.details }}</a
-                >
+                <span>{{ info.details }}</span>
               </li>
             </ul>
           </div>
@@ -191,31 +231,31 @@ export default {
                 mb-2
               "
             >
-              {{ project.socialTitle }}
+              {{ project.linkTitle }}
             </p>
-            <div class="flex items-center gap-3 mt-5">
+            <div class="flex items-center gap-2">
               <a
-                v-for="social in project.socialSharings"
-                :key="social.id"
-                :href="social.url"
+                v-for="link in project.links"
+                :key="link.id"
+                :href="link.url"
                 target="__blank"
                 aria-label="Share Project"
                 class="
-                  bg-ternary-light
-                  dark:bg-ternary-dark
-                  text-gray-400
-                  hover:text-primary-dark
-                  dark:hover:text-primary-light
-                  p-2
-                  rounded-lg
-                  shadow-sm
+                  px-4
+                  sm:px-6
+                  py-2
+                  bg-gray-600
+                  text-primary-light
+                  hover:bg-ternary-dark
+                  dark:bg-gray-200
+                  dark:text-secondary-dark
+                  dark:hover:bg-primary-light
+                  rounded-md
+                  focus:ring-1 focus:ring-indigo-900
                   duration-500
                 "
-                ><i
-                  :data-feather="social.icon"
-                  class="w-4 lg:w-5 h-4 lg:h-5"
-                ></i
-              ></a>
+                >{{ link.title }}</a
+              >
             </div>
           </div>
         </div>
