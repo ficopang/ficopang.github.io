@@ -1,4 +1,4 @@
-name: Build and Deploy Nuxt.js to gh-pages
+name: Nuxt Build and Deploy
 
 on:
   push:
@@ -6,26 +6,28 @@ on:
       - nuxt2-v4
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: Checkout Repository
+        uses: actions/checkout@v2
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: 16
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "16"
 
-    - name: Install dependencies
-      run: npm install
+      - name: Install Dependencies
+        run: yarn install
 
-    - name: Build Nuxt.js
-      run: npm run build
+      - name: Build and Generate Nuxt
+        run: |
+          yarn build
+          yarn generate
 
-    - name: Deploy to gh-pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
