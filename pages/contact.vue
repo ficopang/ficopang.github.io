@@ -1,4 +1,6 @@
 <script>
+import feather from "feather-icons";
+
 export default {
   scrollToTop: true,
   data: () => {
@@ -16,6 +18,12 @@ export default {
         },
       ],
     };
+  },
+  mounted() {
+    feather.replace();
+  },
+  updated() {
+    feather.replace();
   },
 };
 </script>

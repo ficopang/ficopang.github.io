@@ -1,5 +1,6 @@
 <script>
 import { mapState } from "vuex";
+import feather from "feather-icons";
 import FooterCopyright from "./FooterCopyright.vue";
 export default {
   components: { FooterCopyright },
@@ -10,6 +11,12 @@ export default {
   },
   computed: {
     ...mapState(["copyrightDate", "socialProfiles"]),
+  },
+  mounted() {
+    feather.replace();
+  },
+  updated() {
+    feather.replace();
   },
 };
 </script>

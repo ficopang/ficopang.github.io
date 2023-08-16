@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@diracleo/vue-enlargeable-image": "^0.0.7",
-    "@nuxtclub/feathericons": "^1.0.0",
     "@nuxtjs/sitemap": "^2.4.0",
     "@tailwindcss/forms": "^0.3.4",
     "core-js": "^3.15.1",

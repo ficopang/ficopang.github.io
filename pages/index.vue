@@ -1,9 +1,16 @@
 <script>
+import feather from "feather-icons";
 import AppBanner from "../components/shared/AppBanner.vue";
 import Button from "../components/reusable/Button.vue";
 export default {
   scrollToTop: true,
   components: { AppBanner, Button },
+  mounted() {
+    feather.replace();
+  },
+  updated() {
+    feather.replace();
+  },
 };
 </script>
 

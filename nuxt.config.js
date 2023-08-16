@@ -87,7 +87,6 @@ export default {
         theme_color: "#4f46e5",
       },
       "@nuxtjs/sitemap",
-      "@nuxtclub/feathericons",
     ],
   ],
 

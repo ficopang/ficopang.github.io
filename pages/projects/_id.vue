@@ -1,6 +1,7 @@
 <script src="https://unpkg.com/@diracleo/vue-enlargeable-image/dist/vue-enlargeable-image.min.js"></script>
 
 <script>
+import feather from "feather-icons";
 import ProjectRelatedProjects from "../../components/projects/ProjectRelatedProjects.vue";
 export default {
   scrollToTop: true,
@@ -31,6 +32,12 @@ export default {
         console.warn("Web Share API not supported");
       }
     },
+  },
+  mounted() {
+    feather.replace();
+  },
+  updated() {
+    feather.replace();
   },
   components: { ProjectRelatedProjects },
 };
