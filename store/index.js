@@ -22,17 +22,17 @@ export const state = () => ({
         {
           id: uuidv4(),
           title: "Resiku Homepage",
-          img: "../project-images/resiku-1.webp",
+          img: "project-images/resiku-1.webp",
         },
         {
           id: uuidv4(),
           title: "Resiku AWB Check",
-          img: "../project-images/resiku-2.webp",
+          img: "project-images/resiku-2.webp",
         },
         {
           id: uuidv4(),
           title: "Resiku Footer",
-          img: "../project-images/resiku-3.webp",
+          img: "project-images/resiku-3.webp",
         },
       ],
       companyInfos: [
@@ -93,17 +93,17 @@ export const state = () => ({
         {
           id: uuidv4(),
           title: "Restopedia Homepage",
-          img: "../project-images/restopedia-1.webp",
+          img: "project-images/restopedia-1.webp",
         },
         {
           id: uuidv4(),
           title: "Restopedia Restaurant Listing",
-          img: "../project-images/restopedia-2.webp",
+          img: "project-images/restopedia-2.webp",
         },
         {
           id: uuidv4(),
           title: "Restopedia Favorite Restaurant",
-          img: "../project-images/restopedia-3.webp",
+          img: "project-images/restopedia-3.webp",
         },
       ],
       companyInfos: [
@@ -158,22 +158,22 @@ export const state = () => ({
         {
           id: uuidv4(),
           title: "Castello Wedding Splash Screen",
-          img: "../project-images/castello-wedding-1.webp",
+          img: "project-images/castello-wedding-1.webp",
         },
         {
           id: uuidv4(),
           title: "Castello Wedding Homepage",
-          img: "../project-images/castello-wedding-2.webp",
+          img: "project-images/castello-wedding-2.webp",
         },
         {
           id: uuidv4(),
           title: "Castello Wedding Venue Detail",
-          img: "../project-images/castello-wedding-3.webp",
+          img: "project-images/castello-wedding-3.webp",
         },
         {
           id: uuidv4(),
           title: "Castello Wedding Select Date",
-          img: "../project-images/castello-wedding-4.webp",
+          img: "project-images/castello-wedding-4.webp",
         },
       ],
       companyInfos: [
@@ -220,42 +220,42 @@ export const state = () => ({
         {
           id: uuidv4(),
           title: "Bluejack Bookstore Entity Relationship Diagram",
-          img: "../project-images/bluejack-bookstore-1.webp",
+          img: "project-images/bluejack-bookstore-1.webp",
         },
         {
           id: uuidv4(),
           title: "Bluejack Bookstore Login",
-          img: "../project-images/bluejack-bookstore-2.webp",
+          img: "project-images/bluejack-bookstore-2.webp",
         },
         {
           id: uuidv4(),
           title: "Bluejack Bookstore Register",
-          img: "../project-images/bluejack-bookstore-3.webp",
+          img: "project-images/bluejack-bookstore-3.webp",
         },
         {
           id: uuidv4(),
           title: "Bluejack Bookstore Homepage",
-          img: "../project-images/bluejack-bookstore-4.webp",
+          img: "project-images/bluejack-bookstore-4.webp",
         },
         {
           id: uuidv4(),
           title: "Bluejack Bookstore Buy Book",
-          img: "../project-images/bluejack-bookstore-5.webp",
+          img: "project-images/bluejack-bookstore-5.webp",
         },
         {
           id: uuidv4(),
           title: "Bluejack Bookstore Transaction History",
-          img: "../project-images/bluejack-bookstore-6.webp",
+          img: "project-images/bluejack-bookstore-6.webp",
         },
         {
           id: uuidv4(),
           title: "Bluejack Bookstore Manage Book",
-          img: "../project-images/bluejack-bookstore-7.webp",
+          img: "project-images/bluejack-bookstore-7.webp",
         },
         {
           id: uuidv4(),
           title: "Bluejack Bookstore Manage Genre",
-          img: "../project-images/bluejack-bookstore-8.webp",
+          img: "project-images/bluejack-bookstore-8.webp",
         },
       ],
       companyInfos: [
@@ -301,17 +301,17 @@ export const state = () => ({
         {
           id: uuidv4(),
           title: "Chen Buffet Manage Transaction",
-          img: "../project-images/chen-buffet-1.webp",
+          img: "project-images/chen-buffet-1.webp",
         },
         {
           id: uuidv4(),
           title: "Chen Buffet Manage Food",
-          img: "../project-images/chen-buffet-2.webp",
+          img: "project-images/chen-buffet-2.webp",
         },
         {
           id: uuidv4(),
           title: "Chen Buffet Insert Transaction",
-          img: "../project-images/chen-buffet-3.webp",
+          img: "project-images/chen-buffet-3.webp",
         },
       ],
       companyInfos: [
@@ -362,32 +362,32 @@ export const state = () => ({
         {
           id: uuidv4(),
           title: "FArbucks Homepage",
-          img: "../project-images/farbucks-1.webp",
+          img: "project-images/farbucks-1.webp",
         },
         {
           id: uuidv4(),
           title: "FArbucks Footer",
-          img: "../project-images/farbucks-2.webp",
+          img: "project-images/farbucks-2.webp",
         },
         {
           id: uuidv4(),
           title: "FArbucks Coffee Listing",
-          img: "../project-images/farbucks-3.webp",
+          img: "project-images/farbucks-3.webp",
         },
         {
           id: uuidv4(),
           title: "FArbucks Events",
-          img: "../project-images/farbucks-4.webp",
+          img: "project-images/farbucks-4.webp",
         },
         {
           id: uuidv4(),
           title: "FArbucks FAQ",
-          img: "../project-images/farbucks-5.webp",
+          img: "project-images/farbucks-5.webp",
         },
         {
           id: uuidv4(),
           title: "FArbucks Become a Member",
-          img: "../project-images/farbucks-6.webp",
+          img: "project-images/farbucks-6.webp",
         },
       ],
       companyInfos: [
@@ -457,17 +457,17 @@ export const state = () => ({
         {
           id: uuidv4(),
           title: "imbagram Login",
-          img: "../project-images/imbagram-1.webp",
+          img: "project-images/imbagram-1.webp",
         },
         {
           id: uuidv4(),
           title: "imbagram Register",
-          img: "../project-images/imbagram-2.webp",
+          img: "project-images/imbagram-2.webp",
         },
         {
           id: uuidv4(),
           title: "imbagram Home",
-          img: "../project-images/imbagram-3.webp",
+          img: "project-images/imbagram-3.webp",
         },
       ],
       companyInfos: [
@@ -518,17 +518,17 @@ export const state = () => ({
         {
           id: uuidv4(),
           title: "KAdrive Login",
-          img: "../project-images/kadrive-1.webp",
+          img: "project-images/kadrive-1.webp",
         },
         {
           id: uuidv4(),
           title: "KAdrive Register",
-          img: "../project-images/kadrive-2.webp",
+          img: "project-images/kadrive-2.webp",
         },
         {
           id: uuidv4(),
           title: "KAdrive Home",
-          img: "../project-images/kadrive-3.webp",
+          img: "project-images/kadrive-3.webp",
         },
       ],
       companyInfos: [
@@ -580,12 +580,12 @@ export const state = () => ({
         {
           id: uuidv4(),
           title: "legacyArT Login",
-          img: "../project-images/legacyart-1.webp",
+          img: "project-images/legacyart-1.webp",
         },
         {
           id: uuidv4(),
           title: "legacyArT Register",
-          img: "../project-images/legacyart-2.webp",
+          img: "project-images/legacyart-2.webp",
         },
       ],
       companyInfos: [
@@ -636,17 +636,17 @@ export const state = () => ({
         {
           id: uuidv4(),
           title: "PHinterest Login",
-          img: "../project-images/phinterest-1.webp",
+          img: "project-images/phinterest-1.webp",
         },
         {
           id: uuidv4(),
           title: "PHinterest Register",
-          img: "../project-images/phinterest-2.webp",
+          img: "project-images/phinterest-2.webp",
         },
         {
           id: uuidv4(),
           title: "PHinterest Home",
-          img: "../project-images/phinterest-3.webp",
+          img: "project-images/phinterest-3.webp",
         },
       ],
       companyInfos: [
@@ -698,22 +698,22 @@ export const state = () => ({
         {
           id: uuidv4(),
           title: "Pokemon Showdown Login",
-          img: "../project-images/pokemon-showdown-1.webp",
+          img: "project-images/pokemon-showdown-1.webp",
         },
         {
           id: uuidv4(),
           title: "Pokemon Showdown Launcher",
-          img: "../project-images/pokemon-showdown-2.webp",
+          img: "project-images/pokemon-showdown-2.webp",
         },
         {
           id: uuidv4(),
           title: "Pokemon Showdown Home",
-          img: "../project-images/pokemon-showdown-3.webp",
+          img: "project-images/pokemon-showdown-3.webp",
         },
         {
           id: uuidv4(),
           title: "Pokemon Showdown Homepage",
-          img: "../project-images/pokemon-showdown-4.webp",
+          img: "project-images/pokemon-showdown-4.webp",
         },
       ],
       companyInfos: [
@@ -764,17 +764,17 @@ export const state = () => ({
         {
           id: uuidv4(),
           title: "steam Home",
-          img: "../project-images/steam-1.webp",
+          img: "project-images/steam-1.webp",
         },
         {
           id: uuidv4(),
           title: "steam Special Offers",
-          img: "../project-images/steam-2.webp",
+          img: "project-images/steam-2.webp",
         },
         {
           id: uuidv4(),
           title: "steam Avatars",
-          img: "../project-images/steam-3.webp",
+          img: "project-images/steam-3.webp",
         },
       ],
       companyInfos: [
@@ -825,32 +825,32 @@ export const state = () => ({
         {
           id: uuidv4(),
           title: "Travelicious Splash Screen",
-          img: "../project-images/travelicious-1.webp",
+          img: "project-images/travelicious-1.webp",
         },
         {
           id: uuidv4(),
           title: "Travelicious Homepage",
-          img: "../project-images/travelicious-2.webp",
+          img: "project-images/travelicious-2.webp",
         },
         {
           id: uuidv4(),
           title: "Travelicious Place Detail",
-          img: "../project-images/travelicious-3.webp",
+          img: "project-images/travelicious-3.webp",
         },
         {
           id: uuidv4(),
           title: "Travelicious Articles",
-          img: "../project-images/travelicious-4.webp",
+          img: "project-images/travelicious-4.webp",
         },
         {
           id: uuidv4(),
           title: "Travelicious Saved Places",
-          img: "../project-images/travelicious-5.webp",
+          img: "project-images/travelicious-5.webp",
         },
         {
           id: uuidv4(),
           title: "Travelicious Settings",
-          img: "../project-images/travelicious-6.webp",
+          img: "project-images/travelicious-6.webp",
         },
       ],
       companyInfos: [
@@ -896,27 +896,27 @@ export const state = () => ({
         {
           id: uuidv4(),
           title: "Yamada Homepage",
-          img: "../project-images/yamada-1.webp",
+          img: "project-images/yamada-1.webp",
         },
         {
           id: uuidv4(),
           title: "Yamada Showcase",
-          img: "../project-images/yamada-2.webp",
+          img: "project-images/yamada-2.webp",
         },
         {
           id: uuidv4(),
           title: "Yamada Footer",
-          img: "../project-images/yamada-3.webp",
+          img: "project-images/yamada-3.webp",
         },
         {
           id: uuidv4(),
           title: "Yamada Motorcycle Listing",
-          img: "../project-images/yamada-4.webp",
+          img: "project-images/yamada-4.webp",
         },
         {
           id: uuidv4(),
           title: "Yamada Sign Up",
-          img: "../project-images/yamada-5.webp",
+          img: "project-images/yamada-5.webp",
         },
       ],
       companyInfos: [
@@ -968,22 +968,22 @@ export const state = () => ({
         {
           id: uuidv4(),
           title: "LelanginAja Homepage",
-          img: "../project-images/lelanginaja-1.webp",
+          img: "project-images/lelanginaja-1.webp",
         },
         {
           id: uuidv4(),
           title: "LelanginAja Product Detail",
-          img: "../project-images/lelanginaja-2.webp",
+          img: "project-images/lelanginaja-2.webp",
         },
         {
           id: uuidv4(),
           title: "LelanginAja Product Listing",
-          img: "../project-images/lelanginaja-3.webp",
+          img: "project-images/lelanginaja-3.webp",
         },
         {
           id: uuidv4(),
           title: "LelanginAja Login",
-          img: "../project-images/lelanginaja-4.webp",
+          img: "project-images/lelanginaja-4.webp",
         },
       ],
       companyInfos: [
@@ -1030,32 +1030,32 @@ export const state = () => ({
         {
           id: uuidv4(),
           title: "KpopZstation Login",
-          img: "../project-images/kpopzstation-1.webp",
+          img: "project-images/kpopzstation-1.webp",
         },
         {
           id: uuidv4(),
           title: "KpopZstation Artist",
-          img: "../project-images/kpopzstation-2.webp",
+          img: "project-images/kpopzstation-2.webp",
         },
         {
           id: uuidv4(),
           title: "KpopZstation Shopping Cart",
-          img: "../project-images/kpopzstation-3.webp",
+          img: "project-images/kpopzstation-3.webp",
         },
         {
           id: uuidv4(),
           title: "KpopZstation Transaction History",
-          img: "../project-images/kpopzstation-4.webp",
+          img: "project-images/kpopzstation-4.webp",
         },
         {
           id: uuidv4(),
           title: "KpopZstation Update Profile",
-          img: "../project-images/kpopzstation-5.webp",
+          img: "project-images/kpopzstation-5.webp",
         },
         {
           id: uuidv4(),
           title: "KpopZstation Album Details",
-          img: "../project-images/kpopzstation-6.webp",
+          img: "project-images/kpopzstation-6.webp",
         },
       ],
       companyInfos: [
@@ -1095,42 +1095,42 @@ export const state = () => ({
   //   {
   //     id: uuidv4(),
   //     title: "Amazon",
-  //     img: "../brands/amazon_gray.png",
+  //     img: "brands/amazon_gray.png",
   //   },
   //   {
   //     id: uuidv4(),
   //     title: "Sony",
-  //     img: "../brands/sony_gray.png",
+  //     img: "brands/sony_gray.png",
   //   },
   //   {
   //     id: uuidv4(),
   //     title: "Adidas",
-  //     img: "../brands/adidas_gray.png",
+  //     img: "brands/adidas_gray.png",
   //   },
   //   {
   //     id: uuidv4(),
   //     title: "FILA",
-  //     img: "../brands/fila_gray.png",
+  //     img: "brands/fila_gray.png",
   //   },
   //   {
   //     id: uuidv4(),
   //     title: "NB",
-  //     img: "../brands/nb_gray.png",
+  //     img: "brands/nb_gray.png",
   //   },
   //   {
   //     id: uuidv4(),
   //     title: "SAMSUNG",
-  //     img: "../brands/samsung_gray.png",
+  //     img: "brands/samsung_gray.png",
   //   },
   //   {
   //     id: uuidv4(),
   //     title: "CANON",
-  //     img: "../brands/canon_gray.png",
+  //     img: "brands/canon_gray.png",
   //   },
   //   {
   //     id: uuidv4(),
   //     title: "PUMA",
-  //     img: "../brands/puma_gray.png",
+  //     img: "brands/puma_gray.png",
   //   },
   // ],
   aboutMe: [

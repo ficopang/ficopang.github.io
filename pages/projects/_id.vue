@@ -124,11 +124,11 @@ export default {
           :key="projectImage.id"
         >
           <enlargeable-image
-            :src="projectImage.img"
-            :src_large="projectImage.img"
+            :src="'~/../' + projectImage.img"
+            :src_large="'~/../' + projectImage.img"
           >
             <nuxt-img
-              :src="'~/' + projectImage.img"
+              :src="'~/../' + projectImage.img"
               loading="lazy"
               class="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
             />
