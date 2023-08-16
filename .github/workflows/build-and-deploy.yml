@@ -1,0 +1,14 @@
+name: Build Nuxt
+on: [push]
+jobs:
+  build_nuxt:
+    runs-on: ubuntu-latest
+    name: Build Nuxt
+    steps:
+    - uses: actions/checkout@v2
+    - id: Build-Nuxt
+      uses: ashkantaravati/NuxtToGithubPages@v1.0
+      with:
+        username: 'ficopang'
+        reponame: 'ficopang.github.io'
+        token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
