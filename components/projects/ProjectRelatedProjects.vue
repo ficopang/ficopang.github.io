@@ -77,7 +77,7 @@ export default {
       <div v-for="project in randomProjects" :key="project.id">
         <NuxtLink :to="`/projects/${project.id}`">
           <img
-            :src="'../' + project.img"
+            :src="'/' + project.img"
             class="rounded-xl cursor-pointer"
             :alt="project.title"
           />

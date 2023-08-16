@@ -127,8 +127,8 @@ export default {
             :src="projectImage.img"
             :src_large="projectImage.img"
           >
-            <img
-              :src="projectImage.img"
+            <nuxt-img
+              :src="'~/' + projectImage.img"
               loading="lazy"
               class="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
             />
