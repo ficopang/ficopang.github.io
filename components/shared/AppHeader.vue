@@ -60,7 +60,7 @@ export default {
         <div>
           <NuxtLink to="/">
             <img
-              v-if="this.$colorMode.value == 'dark'"
+              v-show="this.$colorMode.value == 'dark'"
               src="~/static/logo-light.svg"
               class="w-36"
               alt="Light Logo"
@@ -69,7 +69,7 @@ export default {
             />
 
             <img
-              v-else
+              v-show="this.$colorMode.value == 'light'"
               src="~/static/logo-dark.svg"
               alt="Color Logo"
               class="w-36"
@@ -98,7 +98,7 @@ export default {
         >
           <!-- Dark mode icon -->
           <svg
-            v-if="$colorMode.value == 'light'"
+            v-show="$colorMode.value == 'light'"
             xmlns="http://www.w3.org/2000/svg"
             class="
               text-liText-ternary-dark
@@ -121,7 +121,7 @@ export default {
           </svg>
           <!-- Light mode icon -->
           <svg
-            v-else
+            v-show="this.$colorMode.value == 'dark'"
             xmlns="http://www.w3.org/2000/svg"
             class="text-gray-200 hover:text-gray-50 w-6 h-6"
             fill="none"
@@ -158,13 +158,13 @@ export default {
               "
             >
               <path
-                v-if="isOpen"
+                v-show="isOpen"
                 fill-rule="evenodd"
                 d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
                 clip-rule="evenodd"
               ></path>
               <path
-                v-if="!isOpen"
+                v-show="!isOpen"
                 fill-rule="evenodd"
                 d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
               ></path>
@@ -222,7 +222,7 @@ export default {
         >
           <!-- Dark mode icon -->
           <svg
-            v-if="$colorMode.value == 'light'"
+            v-show="$colorMode.value == 'light'"
             xmlns="http://www.w3.org/2000/svg"
             class="
               text-liText-ternary-dark
@@ -245,7 +245,7 @@ export default {
           </svg>
           <!-- Light mode icon -->
           <svg
-            v-else
+            v-show="this.$colorMode.value == 'dark'"
             xmlns="http://www.w3.org/2000/svg"
             class="text-gray-200 hover:text-gray-50 w-6 h-6"
             fill="none"
