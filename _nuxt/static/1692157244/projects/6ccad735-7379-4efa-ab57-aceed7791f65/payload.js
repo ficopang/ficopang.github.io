@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/projects/6ccad735-7379-4efa-ab57-aceed7791f65", {data:[{}],fetch:{},mutations:[]});
