@@ -23,22 +23,10 @@ export default {
         dark:text-ternary-light
       "
     >
-      &copy; {{ copyrightDate }}, Fico Pangestu.
-      <!-- <a
-        href="https://github.com/realstoman/nuxtjs-tailwindcss-portfolio"
-        target="__blank"
-        class="
-          font-general-medium
-          hover:underline hover:text-indigo-600
-          dark:hover:text-indigo-300
-          duration-500
-        "
-        >{{ projectName }}</a
-      > -->
-      Originally made by
+      &copy; {{ copyrightDate }}, Fico Pangestu. Originally made by
       <a
         href="https://stoman.me"
-        target="__blank"
+        target="_blank"
         class="
           font-general-medium
           text-secondary-dark

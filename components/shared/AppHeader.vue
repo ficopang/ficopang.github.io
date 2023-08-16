@@ -21,7 +21,7 @@ export default {
   methods: {
     themeSwitcher() {
       this.$colorMode.preference =
-        this.$colorMode.value == "light" ? "dark" : "light";
+        this.$colorMode.preference == "light" ? "dark" : "light";
     },
     showModal() {
       if (this.modal) {
@@ -60,7 +60,7 @@ export default {
         <div>
           <NuxtLink to="/">
             <img
-              v-show="this.$colorMode.value == 'dark'"
+              v-show="this.$colorMode.preference == 'dark'"
               src="~/static/logo-light.svg"
               class="w-36"
               alt="Light Logo"
@@ -69,7 +69,7 @@ export default {
             />
 
             <img
-              v-show="this.$colorMode.value == 'light'"
+              v-show="this.$colorMode.preference == 'light'"
               src="~/static/logo-dark.svg"
               alt="Color Logo"
               class="w-36"
@@ -98,7 +98,7 @@ export default {
         >
           <!-- Dark mode icon -->
           <svg
-            v-show="$colorMode.value == 'light'"
+            v-show="$colorMode.preference == 'light'"
             xmlns="http://www.w3.org/2000/svg"
             class="
               text-liText-ternary-dark
@@ -121,7 +121,7 @@ export default {
           </svg>
           <!-- Light mode icon -->
           <svg
-            v-show="this.$colorMode.value == 'dark'"
+            v-show="this.$colorMode.preference == 'dark'"
             xmlns="http://www.w3.org/2000/svg"
             class="text-gray-200 hover:text-gray-50 w-6 h-6"
             fill="none"
@@ -222,7 +222,7 @@ export default {
         >
           <!-- Dark mode icon -->
           <svg
-            v-show="$colorMode.value == 'light'"
+            v-show="$colorMode.preference == 'light'"
             xmlns="http://www.w3.org/2000/svg"
             class="
               text-liText-ternary-dark
@@ -245,7 +245,7 @@ export default {
           </svg>
           <!-- Light mode icon -->
           <svg
-            v-show="this.$colorMode.value == 'dark'"
+            v-show="this.$colorMode.preference == 'dark'"
             xmlns="http://www.w3.org/2000/svg"
             class="text-gray-200 hover:text-gray-50 w-6 h-6"
             fill="none"

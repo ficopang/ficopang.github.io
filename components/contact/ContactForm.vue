@@ -66,7 +66,7 @@ export default {
             >Full Name</label
           >
           <input
-            v-model="fullName"
+            v-model="name"
             class="
               w-full
               px-5
