@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/projects/9a965f60-7a39-4850-a5e3-6d3d46365eab", {data:[{_img:{"/_ipx/_/~/../project-images/resiku-1.webp":"\u002F_nuxt\u002Fimage\u002F05ec16.webp","/_ipx/_/~/../project-images/resiku-2.webp":"\u002F_nuxt\u002Fimage\u002Fbb3bb2.webp","/_ipx/_/~/../project-images/resiku-3.webp":"\u002F_nuxt\u002Fimage\u002F6ac7e0.webp"}}],fetch:{},mutations:[]});

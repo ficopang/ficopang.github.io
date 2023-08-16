@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/projects/1a55a98e-6e4c-4e09-978f-3f459ac29c68", {data:[{_img:{}}],fetch:{},mutations:[]});
