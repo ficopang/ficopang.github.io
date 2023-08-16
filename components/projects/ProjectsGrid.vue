@@ -1,10 +1,13 @@
 <script>
 import { mapState } from "vuex";
-import feather from "feather-icons";
+import { SearchIcon } from "vue-feather-icons";
 
 export default {
   props: {
     limit: String,
+  },
+  components: {
+    SearchIcon,
   },
   data: () => {
     return {
@@ -50,9 +53,6 @@ export default {
       let project = new RegExp(this.searchProject, "i");
       return this.projects.filter((el) => el.title.match(project));
     },
-  },
-  mounted() {
-    feather.replace();
   },
 };
 </script>
@@ -118,10 +118,9 @@ export default {
               cursor-pointer
             "
           >
-            <i
-              data-feather="search"
+            <SearchIcon
               class="text-ternary-dark dark:text-ternary-light"
-            ></i>
+            ></SearchIcon>
           </span>
           <input
             v-model="searchProject"

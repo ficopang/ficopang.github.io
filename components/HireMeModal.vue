@@ -1,9 +1,9 @@
 <script>
-import feather from "feather-icons";
+import { XIcon } from "vue-feather-icons";
 import Button from "./reusable/Button.vue";
 export default {
   props: ["showModal", "modal", "categories"],
-  components: { Button },
+  components: { Button, XIcon },
   data: () => {
     return {
       name: "",
@@ -12,9 +12,7 @@ export default {
       message: "",
     };
   },
-  mounted() {
-    feather.replace();
-  },
+
   methods: {
     sendEmail() {
       const name = encodeURIComponent(this.name);
@@ -84,7 +82,7 @@ export default {
                   class="px-4 text-primary-dark dark:text-primary-light"
                   @click="showModal()"
                 >
-                  <i data-feather="x" class="w-8 sm:w-12"></i>
+                  <XIcon class="w-8 sm:w-12"></XIcon>
                 </button>
               </div>
               <div class="modal-body p-5 w-full h-full">

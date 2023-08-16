@@ -1,9 +1,20 @@
 <script>
 import { mapState } from "vuex";
-import feather from "feather-icons";
+import {
+  GithubIcon,
+  InstagramIcon,
+  LinkedinIcon,
+  YoutubeIcon,
+} from "vue-feather-icons";
 import FooterCopyright from "./FooterCopyright.vue";
 export default {
-  components: { FooterCopyright },
+  components: {
+    FooterCopyright,
+    GithubIcon,
+    InstagramIcon,
+    LinkedinIcon,
+    YoutubeIcon,
+  },
   data: () => {
     return {
       // Todo
@@ -11,12 +22,6 @@ export default {
   },
   computed: {
     ...mapState(["copyrightDate", "socialProfiles"]),
-  },
-  mounted() {
-    feather.replace();
-  },
-  updated() {
-    feather.replace();
   },
 };
 </script>
@@ -68,7 +73,10 @@ export default {
             "
             :aria-label="social.name"
           >
-            <i :data-feather="social.icon" class="w-6 sm:w-8 h-6 sm:h-8"></i>
+            <component
+              :is="social.icon"
+              class="w-6 sm:w-8 h-6 sm:h-8"
+            ></component>
           </a>
         </div>
       </div>

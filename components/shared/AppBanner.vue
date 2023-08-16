@@ -1,18 +1,13 @@
 <script>
-import feather from "feather-icons";
-
+import { ArrowDownCircleIcon } from "vue-feather-icons";
 export default {
+  components: {
+    ArrowDownCircleIcon,
+  },
   data: () => {
     return {
       // Todo
     };
-  },
-
-  mounted() {
-    feather.replace();
-  },
-  updated() {
-    feather.replace();
   },
 };
 </script>
@@ -89,10 +84,9 @@ export default {
           "
           aria-label="Download CV"
         >
-          <i
-            data-feather="arrow-down-circle"
+          <ArrowDownCircleIcon
             class="ml-0 sm:ml-1 mr-2 sm:mr-3 w-5 sm:w-6 duration-100"
-          ></i>
+          ></ArrowDownCircleIcon>
           <span class="text-sm sm:text-lg font-general-medium duration-100"
             >Download CV</span
           ></a

@@ -34,7 +34,6 @@
 </template>
 
 <script>
-import feather from "feather-icons";
 import AppHeader from "../components/shared/AppHeader.vue";
 import AppFooter from "../components/shared/AppFooter.vue";
 import BackToTop from "../components/BackToTop.vue";
@@ -43,9 +42,6 @@ export default {
     return {
       // Todo
     };
-  },
-  mounted() {
-    feather.replace();
   },
   components: { AppFooter, BackToTop, AppHeader },
 };

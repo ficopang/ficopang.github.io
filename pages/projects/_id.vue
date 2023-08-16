@@ -1,7 +1,7 @@
 <script src="https://unpkg.com/@diracleo/vue-enlargeable-image/dist/vue-enlargeable-image.min.js"></script>
 
 <script>
-import feather from "feather-icons";
+import { Share2Icon, ClockIcon, TagIcon } from "vue-feather-icons";
 import ProjectRelatedProjects from "../../components/projects/ProjectRelatedProjects.vue";
 export default {
   scrollToTop: true,
@@ -33,13 +33,7 @@ export default {
       }
     },
   },
-  mounted() {
-    feather.replace();
-  },
-  updated() {
-    feather.replace();
-  },
-  components: { ProjectRelatedProjects },
+  components: { ProjectRelatedProjects, Share2Icon, ClockIcon, TagIcon },
 };
 </script>
 
@@ -84,16 +78,15 @@ export default {
               aria-label="Share"
               @click="share"
             >
-              <i data-feather="share-2" class="w-4 lg:w-5 h-4 lg:h-5"></i>
+              <Share2Icon class="w-4 lg:w-5 h-4 lg:h-5"></Share2Icon>
             </button>
           </div>
         </div>
         <div class="flex">
           <div class="flex items-center mr-10">
-            <i
-              data-feather="clock"
+            <ClockIcon
               class="w-4 h-4 text-ternary-dark dark:text-ternary-light"
-            ></i>
+            ></ClockIcon>
             <span
               class="
                 font-general-medium
@@ -106,10 +99,9 @@ export default {
             >
           </div>
           <div class="flex items-center">
-            <i
-              data-feather="tag"
+            <TagIcon
               class="w-4 h-4 text-ternary-dark dark:text-ternary-light"
-            ></i>
+            ></TagIcon>
             <span
               class="
                 font-general-medium
