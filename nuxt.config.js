@@ -67,7 +67,6 @@ export default {
     "@nuxtjs/tailwindcss",
     "@nuxtjs/color-mode",
     "@nuxt/image",
-    "@nuxtclub/feathericons",
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -88,6 +87,7 @@ export default {
         theme_color: "#4f46e5",
       },
       "@nuxtjs/sitemap",
+      "@nuxtclub/feathericons",
     ],
   ],
 
