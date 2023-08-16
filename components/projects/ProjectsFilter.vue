@@ -37,6 +37,7 @@ export default {
       text-primary-dark
       dark:text-ternary-light
     "
+    aria-label="Project Filter"
   >
     <option value class="text-sm sm:text-md">All Projects</option>
     <option
@@ -44,7 +45,6 @@ export default {
       :key="option"
       :value="option"
       class="sm:text-md"
-      aria-label="Project Filter"
     >
       {{ option }}
     </option>

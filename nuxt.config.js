@@ -86,6 +86,7 @@ export default {
         twitter_card: "/banner.png",
         theme_color: "#4f46e5",
       },
+      "@nuxtjs/sitemap",
     ],
   ],
 
