@@ -86,8 +86,8 @@ export default {
         twitter_card: "/banner.png",
         theme_color: "#4f46e5",
       },
-      "@nuxtjs/sitemap",
     ],
+    "@nuxtjs/sitemap",
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
