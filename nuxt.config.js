@@ -90,6 +90,10 @@ export default {
     "@nuxtjs/sitemap",
   ],
 
+  sitemap: {
+    hostname: "https://ficopang.github.io",
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 };
