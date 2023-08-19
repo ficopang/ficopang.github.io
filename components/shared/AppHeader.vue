@@ -58,7 +58,7 @@ export default {
       <div class="flex justify-between items-center px-6 sm:px-0">
         <!-- Header logos -->
         <div>
-          <NuxtLink to="/">
+          <NuxtLink to="/" aria-label="logo">
             <img
               v-show="this.$colorMode.preference == 'dark'"
               src="~/static/logo-light.svg"
