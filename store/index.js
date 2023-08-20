@@ -285,63 +285,73 @@ export const state = () => ({
       ],
     },
     {
-      id: "9b4f7f21-ab0c-46bd-a6d2-51759e56741b",
-      title: "Chen Buffet",
+      id: "49541d69-3cd8-4a88-85c4-e810647a23ba",
+      title: "Yamada",
       category: "Web Application",
-      img: "project-images/chen-buffet-thumb.webp",
-      publishDate: "Feb 20, 2022",
-      tag: "Web / Backend",
+      img: "project-images/yamada-thumb.webp",
+      publishDate: "June 17, 2022",
+      tag: "Web / Frontend",
       clientTitle: "About Client",
       objectivesTitle: "Objective",
-      objectivesDetails: "Create A Laravel web application for restaurant app",
+      objectivesDetails: "Create a website for motorcycle shop",
       techTitle: "Tools & Technologies",
       detailsTitle: "Details",
       linkTitle: "Links",
       projectImages: [
         {
           id: uuidv4(),
-          title: "Chen Buffet Manage Transaction",
-          img: "project-images/chen-buffet-1.webp",
+          title: "Yamada Homepage",
+          img: "project-images/yamada-1.webp",
         },
         {
           id: uuidv4(),
-          title: "Chen Buffet Manage Food",
-          img: "project-images/chen-buffet-2.webp",
+          title: "Yamada Showcase",
+          img: "project-images/yamada-2.webp",
         },
         {
           id: uuidv4(),
-          title: "Chen Buffet Insert Transaction",
-          img: "project-images/chen-buffet-3.webp",
+          title: "Yamada Footer",
+          img: "project-images/yamada-3.webp",
+        },
+        {
+          id: uuidv4(),
+          title: "Yamada Motorcycle Listing",
+          img: "project-images/yamada-4.webp",
+        },
+        {
+          id: uuidv4(),
+          title: "Yamada Sign Up",
+          img: "project-images/yamada-5.webp",
         },
       ],
       companyInfos: [
         {
           id: uuidv4(),
-          details: "Software Laboratory Center BINUS University",
+          details: "BINUS University",
         },
         {
           id: uuidv4(),
-          details: "Core Training",
+          details: "Human and Computer Interaction Lab Course",
         },
       ],
-      technologies: ["Laravel"],
+      technologies: ["HTML", "CSS", "JavaScript"],
       projectDetails: [
         {
           id: uuidv4(),
           details:
-            "This is one of Software Laboratory Center BINUS University Core Training Case.",
-        },
-        {
-          id: uuidv4(),
-          details:
-            "Core training is an intensive training for 30 days, where every day trainees are taught the basics and given assignments from 7 am to 6 pm as a qualification and preparation to become lab assistants at BINUS University.",
+            "Yamada is a web application for motorcycle shop, created for lab assignment of Human and Computer Interaction",
         },
       ],
       links: [
         {
           id: uuidv4(),
+          title: "Demo",
+          url: "https://yamada.vercel.app/",
+        },
+        {
+          id: uuidv4(),
           title: "Github",
-          url: "https://github.com/ficopang/chen-buffet",
+          url: "https://github.com/ficopang/Yamada",
         },
       ],
     },
@@ -437,6 +447,67 @@ export const state = () => ({
           id: uuidv4(),
           title: "Github",
           url: "https://github.com/ficopang/FArbucks",
+        },
+      ],
+    },
+    {
+      id: "9b4f7f21-ab0c-46bd-a6d2-51759e56741b",
+      title: "Chen Buffet",
+      category: "Web Application",
+      img: "project-images/chen-buffet-thumb.webp",
+      publishDate: "Feb 20, 2022",
+      tag: "Web / Backend",
+      clientTitle: "About Client",
+      objectivesTitle: "Objective",
+      objectivesDetails: "Create A Laravel web application for restaurant app",
+      techTitle: "Tools & Technologies",
+      detailsTitle: "Details",
+      linkTitle: "Links",
+      projectImages: [
+        {
+          id: uuidv4(),
+          title: "Chen Buffet Manage Transaction",
+          img: "project-images/chen-buffet-1.webp",
+        },
+        {
+          id: uuidv4(),
+          title: "Chen Buffet Manage Food",
+          img: "project-images/chen-buffet-2.webp",
+        },
+        {
+          id: uuidv4(),
+          title: "Chen Buffet Insert Transaction",
+          img: "project-images/chen-buffet-3.webp",
+        },
+      ],
+      companyInfos: [
+        {
+          id: uuidv4(),
+          details: "Software Laboratory Center BINUS University",
+        },
+        {
+          id: uuidv4(),
+          details: "Core Training",
+        },
+      ],
+      technologies: ["Laravel"],
+      projectDetails: [
+        {
+          id: uuidv4(),
+          details:
+            "This is one of Software Laboratory Center BINUS University Core Training Case.",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "Core training is an intensive training for 30 days, where every day trainees are taught the basics and given assignments from 7 am to 6 pm as a qualification and preparation to become lab assistants at BINUS University.",
+        },
+      ],
+      links: [
+        {
+          id: uuidv4(),
+          title: "Github",
+          url: "https://github.com/ficopang/chen-buffet",
         },
       ],
     },
@@ -876,77 +947,6 @@ export const state = () => ({
           id: uuidv4(),
           title: "Dribbble",
           url: "https://dribbble.com/shots/19577287-Travelicious-Travel-App",
-        },
-      ],
-    },
-    {
-      id: "49541d69-3cd8-4a88-85c4-e810647a23ba",
-      title: "Yamada",
-      category: "Web Application",
-      img: "project-images/yamada-thumb.webp",
-      publishDate: "June 17, 2022",
-      tag: "Web / Frontend",
-      clientTitle: "About Client",
-      objectivesTitle: "Objective",
-      objectivesDetails: "Create a website for motorcycle shop",
-      techTitle: "Tools & Technologies",
-      detailsTitle: "Details",
-      linkTitle: "Links",
-      projectImages: [
-        {
-          id: uuidv4(),
-          title: "Yamada Homepage",
-          img: "project-images/yamada-1.webp",
-        },
-        {
-          id: uuidv4(),
-          title: "Yamada Showcase",
-          img: "project-images/yamada-2.webp",
-        },
-        {
-          id: uuidv4(),
-          title: "Yamada Footer",
-          img: "project-images/yamada-3.webp",
-        },
-        {
-          id: uuidv4(),
-          title: "Yamada Motorcycle Listing",
-          img: "project-images/yamada-4.webp",
-        },
-        {
-          id: uuidv4(),
-          title: "Yamada Sign Up",
-          img: "project-images/yamada-5.webp",
-        },
-      ],
-      companyInfos: [
-        {
-          id: uuidv4(),
-          details: "BINUS University",
-        },
-        {
-          id: uuidv4(),
-          details: "Human and Computer Interaction Lab Course",
-        },
-      ],
-      technologies: ["HTML", "CSS", "JavaScript"],
-      projectDetails: [
-        {
-          id: uuidv4(),
-          details:
-            "Yamada is a web application for motorcycle shop, created for lab assignment of Human and Computer Interaction",
-        },
-      ],
-      links: [
-        {
-          id: uuidv4(),
-          title: "Demo",
-          url: "https://yamada.vercel.app/",
-        },
-        {
-          id: uuidv4(),
-          title: "Github",
-          url: "https://github.com/ficopang/Yamada",
         },
       ],
     },

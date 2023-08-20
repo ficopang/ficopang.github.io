@@ -81,7 +81,7 @@ export default {
     </div>
 
     <!-- Filter and search projects -->
-    <div class="mt-8 sm:mt-10">
+    <div class="mt-2 sm:mt-4">
       <h3
         class="
           font-general-regular
@@ -90,26 +90,26 @@ export default {
           text-md
           sm:text-xl
           font-normal
-          mb-4
+          mb-10
         "
       >
         Search projects by title or filter by category
       </h3>
       <div
         class="
-          sm:flex
+          flex flex-col
+          sm:flex-row
           justify-between
           border-b border-primary-light
           dark:border-secondary-dark
-          pb-3
+          pb-0
           gap-2
         "
       >
         <div class="flex justify-between gap-2">
           <span
             class="
-              hidden
-              sm:block
+              block
               bg-primary-light
               dark:bg-ternary-dark
               p-2.5
@@ -130,6 +130,7 @@ export default {
               pr-1
               sm:px-4
               py-2
+              w-full
               border-1 border-gray-200
               dark:border-secondary-dark
               rounded-lg
