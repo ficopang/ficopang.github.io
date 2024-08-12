@@ -57,7 +57,7 @@ export default {
       </p>
       <div class="flex justify-center sm:block">
         <a
-          href="/CV-Fico-Pangestu.pdf"
+          href="/CV - Fico Pangestu.pdf"
           download=""
           class="
             flex
