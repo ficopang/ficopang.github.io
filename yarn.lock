@@ -869,6 +869,10 @@
   version "0.0.7"
   resolved "https://registry.npmjs.org/@diracleo/vue-enlargeable-image/-/vue-enlargeable-image-0.0.7.tgz"
 
+"@fastify/busboy@^2.0.0":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@fastify/busboy/-/busboy-2.1.1.tgz#b9da6a878a371829a0502c9b6c1c143ef6663f4d"
+
 "@gar/promisify@^1.0.1":
   version "1.1.2"
   resolved "https://registry.npmjs.org/@gar/promisify/-/promisify-1.1.2.tgz"
@@ -2125,12 +2129,6 @@ buffer@^5.1.0, buffer@^5.5.0:
 builtin-status-codes@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz"
-
-busboy@^1.6.0:
-  version "1.6.0"
-  resolved "https://registry.npmjs.org/busboy/-/busboy-1.6.0.tgz"
-  dependencies:
-    streamsearch "^1.1.0"
 
 bytes@3.0.0:
   version "3.0.0"
@@ -7149,10 +7147,6 @@ stream-shift@^1.0.0:
   version "1.0.1"
   resolved "https://registry.npmjs.org/stream-shift/-/stream-shift-1.0.1.tgz"
 
-streamsearch@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npmjs.org/streamsearch/-/streamsearch-1.1.0.tgz"
-
 strict-uri-encode@^1.0.0:
   version "1.1.0"
   resolved "https://registry.npmjs.org/strict-uri-encode/-/strict-uri-encode-1.1.0.tgz"
@@ -7568,10 +7562,10 @@ unbox-primitive@^1.0.1:
     which-boxed-primitive "^1.0.2"
 
 undici@^5.12.0:
-  version "5.23.0"
-  resolved "https://registry.npmjs.org/undici/-/undici-5.23.0.tgz"
+  version "5.28.4"
+  resolved "https://registry.yarnpkg.com/undici/-/undici-5.28.4.tgz#6b280408edb6a1a604a9b20340f45b422e373068"
   dependencies:
-    busboy "^1.6.0"
+    "@fastify/busboy" "^2.0.0"
 
 unfetch@^4.2.0:
   version "4.2.0"
