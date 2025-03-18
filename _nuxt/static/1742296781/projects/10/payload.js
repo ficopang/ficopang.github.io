@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/projects/10", {data:[{_img:{"/_ipx/_/~/../project-images/legacyart-1.webp":"\u002F_nuxt\u002Fimage\u002Fb55164.webp","/_ipx/_/~/../project-images/legacyart-2.webp":"\u002F_nuxt\u002Fimage\u002Fe21b83.webp"}}],fetch:{},mutations:[]});

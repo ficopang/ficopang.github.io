@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/projects/7", {data:[{_img:{"/_ipx/_/~/../project-images/chen-buffet-1.webp":"\u002F_nuxt\u002Fimage\u002F8b2481.webp","/_ipx/_/~/../project-images/chen-buffet-2.webp":"\u002F_nuxt\u002Fimage\u002F7d9a21.webp","/_ipx/_/~/../project-images/chen-buffet-3.webp":"\u002F_nuxt\u002Fimage\u002F3c589f.webp"}}],fetch:{},mutations:[]});
