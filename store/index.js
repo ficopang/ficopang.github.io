@@ -5,7 +5,7 @@ export const state = () => ({
   projectsDescription: "Some of the projects I have successfully completed",
   projects: [
     {
-      id: "9a965f60-7a39-4850-a5e3-6d3d46365eab",
+      id: 1,
       title: "Resiku",
       category: "Web Application",
       img: "project-images/resiku-thumb.webp",
@@ -76,7 +76,7 @@ export const state = () => ({
       ],
     },
     {
-      id: "64aa900d-a668-4d28-98a0-5c0538f7be80",
+      id: 2,
       title: "Restopedia",
       category: "Web Application",
       img: "project-images/restopedia-thumb.webp",
@@ -142,7 +142,7 @@ export const state = () => ({
       ],
     },
     {
-      id: "6ccad735-7379-4efa-ab57-aceed7791f65",
+      id: 3,
       title: "Castello Wedding",
       category: "UI/UX Design",
       img: "project-images/castello-wedding-thumb.webp",
@@ -203,7 +203,7 @@ export const state = () => ({
       ],
     },
     {
-      id: "1a55a98e-6e4c-4e09-978f-3f459ac29c68",
+      id: 4,
       title: "Bluejack Bookstore",
       category: "Desktop Application",
       img: "project-images/bluejack-bookstore-thumb.webp",
@@ -285,7 +285,7 @@ export const state = () => ({
       ],
     },
     {
-      id: "49541d69-3cd8-4a88-85c4-e810647a23ba",
+      id: 5,
       title: "Yamada",
       category: "Web Application",
       img: "project-images/yamada-thumb.webp",
@@ -356,7 +356,7 @@ export const state = () => ({
       ],
     },
     {
-      id: "78defe6e-d7bb-4c9a-b0d0-9e34275a6f88",
+      id: 6,
       title: "FArbucks",
       category: "Web Application",
       img: "project-images/farbucks-thumb.webp",
@@ -451,7 +451,7 @@ export const state = () => ({
       ],
     },
     {
-      id: "9b4f7f21-ab0c-46bd-a6d2-51759e56741b",
+      id: 7,
       title: "Chen Buffet",
       category: "Web Application",
       img: "project-images/chen-buffet-thumb.webp",
@@ -512,7 +512,7 @@ export const state = () => ({
       ],
     },
     {
-      id: "cee8482b-d45c-461e-b1df-3d933426e178",
+      id: 8,
       title: "imbagram",
       category: "Web Application",
       img: "project-images/imbagram-thumb.webp",
@@ -573,7 +573,7 @@ export const state = () => ({
       ],
     },
     {
-      id: "2a3b6508-7a8c-4824-bea3-412f47bbf905",
+      id: 9,
       title: "KAdrive",
       category: "Web Application",
       img: "project-images/kadrive-thumb.webp",
@@ -634,7 +634,7 @@ export const state = () => ({
       ],
     },
     {
-      id: "9c245aa1-4031-4f9a-9d86-d9adf8495b98",
+      id: 10,
       title: "legacyArT",
       category: "Web Application",
       img: "project-images/legacyart-thumb.webp",
@@ -691,7 +691,7 @@ export const state = () => ({
       ],
     },
     {
-      id: "0adcb36d-73ff-481f-b5d6-0acb294963f4",
+      id: 11,
       title: "PHinterest",
       category: "Web Application",
       img: "project-images/phinterest-thumb.webp",
@@ -752,7 +752,7 @@ export const state = () => ({
       ],
     },
     {
-      id: "0bdf7754-1139-41ef-8cfe-22e29671ccd0",
+      id: 12,
       title: "Pokemon Showdown",
       category: "Desktop Application",
       img: "project-images/pokemon-showdown-thumb.webp",
@@ -819,7 +819,7 @@ export const state = () => ({
       ],
     },
     {
-      id: "faf27360-96a2-414c-938f-ccbc89adbd25",
+      id: 13,
       title: "STEAM",
       category: "Web Application",
       img: "project-images/steam-thumb.webp",
@@ -880,7 +880,7 @@ export const state = () => ({
       ],
     },
     {
-      id: "44b524f5-01af-4c47-9416-b12110dadbc1",
+      id: 14,
       title: "Travelicious",
       category: "UI/UX Design",
       img: "project-images/travelicious-thumb.webp",
@@ -951,7 +951,7 @@ export const state = () => ({
       ],
     },
     {
-      id: "7f84c464-1f72-495e-904f-a08fcbcfb7cb",
+      id: 15,
       title: "LelanginAja",
       category: "Web Application",
       img: "project-images/lelanginaja-thumb.webp",
@@ -1013,7 +1013,7 @@ export const state = () => ({
       ],
     },
     {
-      id: "5a9e2a30-44d5-4744-851a-05875f9ba387",
+      id: 16,
       title: "KpopZstation",
       category: "Web Application",
       img: "project-images/kpopzstation-thumb.webp",
@@ -1089,50 +1089,159 @@ export const state = () => ({
         },
       ],
     },
+    {
+      id: 17,
+      title: "SnapGram",
+      category: "Mobile Application",
+      img: "project-images/snapgram-thumb.webp",
+      publishDate: "March 12, 2025",
+      tag: "Mobile",
+      clientTitle: "About Client",
+      objectivesTitle: "Objective",
+      objectivesDetails:
+        "Develop a simple Instagram-like mobile application using Flutter for the front end and a Java-based backend (Spring Boot preferred) with MySQL as the database.",
+      techTitle: "Tools & Technologies",
+      detailsTitle: "Details",
+      linkTitle: "Links",
+      projectImages: [
+        {
+          id: uuidv4(),
+          title: "SnapGram Login",
+          img: "project-images/snapgram-1.webp",
+        },
+        {
+          id: uuidv4(),
+          title: "SnapGram Home",
+          img: "project-images/snapgram-2.webp",
+        },
+        {
+          id: uuidv4(),
+          title: "SnapGram Comments and Replies",
+          img: "project-images/snapgram-3.webp",
+        },
+      ],
+      companyInfos: [
+        {
+          id: uuidv4(),
+          details: "Take home assignment for recruitment",
+        },
+      ],
+      technologies: ["Java SpringBoot", "Flutter"],
+      projectDetails: [
+        {
+          id: uuidv4(),
+          details:
+            "SnapGram is a modern, Instagram-like social media mobile application that allows users to view, like, and comment on posts while providing an intuitive and visually engaging user experience. Built with Flutter for a seamless cross-platform experience and powered by a robust Spring Boot backend with MySQL, this app delivers a smooth and interactive social feed similar to Instagram.",
+        },
+      ],
+      links: [
+        {
+          id: uuidv4(),
+          title: "Github (Flutter)",
+          url: "https://github.com/ficopang/snapgram",
+        },
+        {
+          id: uuidv4(),
+          title: "Github (Backend)",
+          url: "https://github.com/ficopang/instaserver",
+        },
+      ],
+    },
+    {
+      id: 18,
+      title: "Secret Formula",
+      category: "Mobile Application",
+      img: "project-images/secret-formula-thumb.webp",
+      publishDate: "Nov 20, 2024",
+      tag: "Mobile",
+      clientTitle: "About Client",
+      objectivesTitle: "Objective",
+      objectivesDetails:
+        "Create a simple Android application with key features including a main page using RecyclerView for a list of items, a detailed page with relevant information and ScrollView for rotation handling, and an about page displaying personal information.",
+      techTitle: "Tools & Technologies",
+      detailsTitle: "Details",
+      linkTitle: "Links",
+      projectImages: [
+        {
+          id: uuidv4(),
+          title: "SecretFormula Splash Screen",
+          img: "project-images/secret-formula-1.webp",
+        },
+        {
+          id: uuidv4(),
+          title: "SecretFormula Home",
+          img: "project-images/secret-formula-2.webp",
+        },
+        {
+          id: uuidv4(),
+          title: "SecretFormula Details",
+          img: "project-images/secret-formula-3.webp",
+        },
+      ],
+      companyInfos: [
+        {
+          id: uuidv4(),
+          details: "Dicoding Indonesia",
+        },
+        {
+          id: uuidv4(),
+          details: "Belajar Membuat Aplikasi Android untuk Pemula Course",
+        },
+      ],
+      technologies: ["Kotlin", "Android"],
+      projectDetails: [
+        {
+          id: uuidv4(),
+          details:
+            "Secret Formula is a delightful recipe application that helps users discover and explore culinary creations. With an easy-to-navigate interface, you can browse through a variety of recipes, view detailed ingredients and steps, and even learn more about each dish with just a tap. Perfect for food enthusiasts and home cooks alike!",
+        },
+        {
+          id: uuidv4(),
+          details: "Here are the criteria for project submission:",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "A Main Page displaying at least 10 unique items in a RecyclerView list, with titles, optional overviews, and clickable items leading to detailed views.",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "A Detail Page showcasing a relevant image, title, and extended description with ScrollView support for rotation handling.",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "An About Page including your photo, name, and email, accessible via a dedicated button or menu option.",
+        },
+      ],
+      links: [
+        {
+          id: uuidv4(),
+          title: "Github",
+          url: "https://github.com/ficopang/snapgram",
+        },
+      ],
+    },
   ],
-  // clientsHeading: "Some of the brands I worked with",
-  // clients: [
-  //   {
-  //     id: uuidv4(),
-  //     title: "Amazon",
-  //     img: "brands/amazon_gray.png",
-  //   },
-  //   {
-  //     id: uuidv4(),
-  //     title: "Sony",
-  //     img: "brands/sony_gray.png",
-  //   },
-  //   {
-  //     id: uuidv4(),
-  //     title: "Adidas",
-  //     img: "brands/adidas_gray.png",
-  //   },
-  //   {
-  //     id: uuidv4(),
-  //     title: "FILA",
-  //     img: "brands/fila_gray.png",
-  //   },
-  //   {
-  //     id: uuidv4(),
-  //     title: "NB",
-  //     img: "brands/nb_gray.png",
-  //   },
-  //   {
-  //     id: uuidv4(),
-  //     title: "SAMSUNG",
-  //     img: "brands/samsung_gray.png",
-  //   },
-  //   {
-  //     id: uuidv4(),
-  //     title: "CANON",
-  //     img: "brands/canon_gray.png",
-  //   },
-  //   {
-  //     id: uuidv4(),
-  //     title: "PUMA",
-  //     img: "brands/puma_gray.png",
-  //   },
-  // ],
+  clientsHeading: "Companies Where I Contributed",
+  clients: [
+    {
+      id: uuidv4(),
+      title: "BINUS University",
+      img: "brands/binus.png",
+    },
+    {
+      id: uuidv4(),
+      title: "Kamar Pelajar",
+      img: "brands/kp.png",
+    },
+    {
+      id: uuidv4(),
+      title: "SAMSUNG",
+      img: "brands/samsung.png",
+    },
+  ],
   aboutMe: [
     {
       id: uuidv4(),
